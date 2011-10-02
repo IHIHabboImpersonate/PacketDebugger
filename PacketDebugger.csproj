@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7CA5102F-A388-4F6D-BFE6-54C3FE0B898B}</ProjectGuid>
+    <ProjectGuid>{CA1AA3F4-067F-4AD9-8516-6EF30D55EFE1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IHI.Server.Plugins.Cecer1</RootNamespace>
-    <AssemblyName>PluginManager</AssemblyName>
+    <RootNamespace>IHI.Server.Plugins.Cecer1.PacketDebugger</RootNamespace>
+    <AssemblyName>PacketDebugger</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Handlers.cs" />
-    <Compile Include="WEB_PluginManager.cs" />
+    <Compile Include="WEB_PacketDebugger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
