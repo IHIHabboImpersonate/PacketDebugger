@@ -19,18 +19,5 @@ namespace IHI.Server.Plugins.Cecer1.PacketDebugger
             CoreManager.GetCore().GetWebAdminManager().AddPathHandler("/admin/packet/sendform", new HttpPathHandler(this.fHandlers.PAGE_SendForm));
             CoreManager.GetCore().GetWebAdminManager().AddPathHandler("/admin/packet/logs", new HttpPathHandler(this.fHandlers.PAGE_Logs));
         }
-
-        public override void Stop()
-        {
-            CoreManager.GetCore().GetWebAdminManager().RemovePathHandler("/admin/packet");
-            CoreManager.GetCore().GetWebAdminManager().RemovePathHandler("/admin/packet/add");
-            CoreManager.GetCore().GetWebAdminManager().RemovePathHandler("/admin/packet/remove");
-            CoreManager.GetCore().GetWebAdminManager().RemovePathHandler("/admin/packet/send");
-            CoreManager.GetCore().GetWebAdminManager().RemovePathHandler("/admin/packet/addform");
-            CoreManager.GetCore().GetWebAdminManager().RemovePathHandler("/admin/packet/sendform");
-            CoreManager.GetCore().GetWebAdminManager().RemovePathHandler("/admin/packet/logs");
-
-            this.fHandlers = null;
-        }
     }
 }
